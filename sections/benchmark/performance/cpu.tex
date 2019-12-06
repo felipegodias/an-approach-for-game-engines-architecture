@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+\begin{axis}[
+    title={Average CPU Usage. Smaller is better.},
+    reverse legend,
+	x tick label style={
+		/pgf/number format/1000 sep=},
+	ylabel=Percent,
+	enlargelimits=0.05,
+	legend style={at={(0.5,-0.1)},
+	anchor=north,legend columns=-1},
+	ybar interval=0.7,
+]
+\addplot 
+	coordinates {(1,40) (0,0)};
+\addplot 
+	coordinates {(1,60) (0,0)};
+\addplot
+	coordinates {(1,60) (0,0)};
+\legend{Pluto,Unity (Mono), Unity (IL2CPP)}
+\end{axis}
+\end{tikzpicture}

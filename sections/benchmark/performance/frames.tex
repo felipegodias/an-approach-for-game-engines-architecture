@@ -1,0 +1,21 @@
+\begin{tikzpicture}[step y=500]
+\begin{axis}[
+    title={Average Frames per Second. Higher is better.},
+    reverse legend,
+	x tick label style={
+		/pgf/number format/1000 sep=},
+	ylabel=FPS,
+	enlargelimits=0.05,
+	legend style={at={(0.5,-0.1)},
+	anchor=north,legend columns=-1},
+	ybar interval=0.7,
+]
+\addplot 
+	coordinates {(1,2632) (0,0)};
+\addplot 
+	coordinates {(1,2455) (0,0)};
+\addplot
+	coordinates {(1,3024) (0,0)};
+\legend{Pluto,Unity (Mono), Unity (IL2CPP)}
+\end{axis}
+\end{tikzpicture}

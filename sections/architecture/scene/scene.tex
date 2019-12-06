@@ -1,0 +1,8 @@
+\subsection{Scene}
+When you are making a game, even a small one, there's a lot of objects running at the same time, these objects can be 3D models, Sprites, UI Elements and more\cite{ObjectOrientedGameProgrammingTheSceneSystem}. In order to render be effective, the scene manager needs to keep track of the in-game object that is currently composing the scene. A naive approach to the problem is iterate over all objects in the scene and then render it, but this approach doesn't have a good performance at all, since even objects that are not in the camera view will be rendered as well, one good solution for the problem is to implement a scene graph\footnote{"Abstractly put, a Scene Graph is an organized hierarchy of nodes in a data structure with special relationships that simplify a problem.", "A Scene Graph is an m-ary tree, a tree with any node possessing any number of children, in which any particular node will inherit and amalgamate the transformations and render states, or other such states of the parent."\cite{ObjectOrientedSceneManagement}}, this way only objects and it's children that are visible to the camera can be rendered\cite{3DGameEngineDesign}.
+
+\begin{figure*}[!t]
+\centering
+\subfloat{\includegraphics[width=6.5in]{scene-graph}} \caption{Scene graph representation in a photograph \cite{SceneGraphRepresentationAndLearning}.}
+\label{scene-graph}
+\end{figure*}

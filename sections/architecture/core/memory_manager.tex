@@ -1,0 +1,4 @@
+\subsubsection{Memory Manager}
+A game engine's memory manager is one of the most important features, not only algorithms but a bad memory management can cause high impact on the game performance\cite{GameEngineArchitecture}. Some common memory management implementations are using a Stack-based allocator, this way the engine can allocate a continuous memory segmentation, in C++ this can be achieved using the malloc native method\cite{GameEngineArchitecture, Malloc}. Others memory management techniques are the single frame memory or double-buffered frame memory and object pooling\cite{GameEngineArchitecture, MemoryAllocationPatternsUsedInGameDevelopment}.
+
+\begin{figure}[!h] \centering \includegraphics[width=3in]{stack} \caption{A representation for stack allocation.\cite{GameEngineArchitecture}.} \label{fig:memory-stack} \end{figure}

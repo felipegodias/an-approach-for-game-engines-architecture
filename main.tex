@@ -1,0 +1,56 @@
+\input{meta.tex}
+
+\begin{document}
+
+\title{An Approach for Game Engines Architecture}
+
+\author{Felipe Gabriel de Oliveira Dias% <-this % stops a space
+%\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell was with the Department
+%of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+%GA, 30332.\protect\\
+% note need leading \protect in front of \\ to get a newline within \thanks as
+% \\ is fragile and will error, could use \hfil\break instead.
+%E-mail: see http://www.michaelshell.org/contact.html
+%\IEEEcompsocthanksitem J. Doe and J. Doe are with Anonymous University.}% <-this % stops an unwanted space
+\thanks{Felipe Gabriel de Oliveira Dias, Computer Science Graduation Student at Universidade Tiradentes. Manuscript received December xx, 2019; revised xxxxxx xx, 2019.}}
+
+% The paper headers
+\markboth{xxxxxxxxxxxxx, December~2019}%
+{}
+
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+\input{keywords.tex}
+\end{IEEEkeywords}
+}
+
+\maketitle
+\IEEEdisplaynontitleabstractindextext
+
+\IEEEpeerreviewmaketitle
+
+\input{sections/introduction/introduction.tex}
+\input{sections/game_engine/game_engine.tex}
+
+\input{sections/architecture/architecture.tex}
+
+\input{sections/benchmark/benchmark.tex}
+
+\input{sections/conclusion/conclusion.tex}
+
+\input{acknowledgments.tex}
+
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+% references section
+
+\input{references.tex}
+
+\end{document}
